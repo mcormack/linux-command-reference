@@ -4,19 +4,19 @@
 
 ## Reference for Linux Commands
 
-* uname: print basic info about system OS and hardware. [**Options**](#uname)
-* pwd: 
-* cd: 
-* ls:
-* cat: 
-* grep: 
-* cp: 
-* wc: 
-* find: 
-* diff: 
-* curl: 
-* vim: 
-* chmod: 
+* `uname`: Print basic info about system OS and hardware. [**Options**](#uname)
+* `pwd`: Print working directory, where are we located.
+* `cd`: Change working directory.
+* `ls`: Lists / displays contents of a directory. Shows files and directories within the current directory. [**Options**](#ls)
+* `cat`: Concatenate: Read the contents of any file. [**Options**](#cat)
+* `grep`: 
+* `cp`: 
+* `wc`: 
+* `find`: 
+* `diff`: 
+* `curl`: 
+* `vim`: 
+* `chmod`: 
 
 ## 🎥 Good References / Sources
 
@@ -37,22 +37,38 @@
 * -o Operating system
 * -p Processor type
 
-### pwd:
+### ls
+
+#### Most Used
+
+* -l Long format: Shows files details: permisions, owner, size and modification date.
+* -h Displays file sizes in human-readable formats (e.g., KB, MB) when combined with -l.
+* -t Sorts files by modification time, with the newest first.
+
+#### Other
+
+* -a All files, including hidden ones.
+* -R Lists contents of directories recursively, including subdirectories.
+* -r Reverses the order of the output.
+* -1 Lists one file per line instead of displaying them in columns.
+* -d Lists directories only.
+* -F Appends a character to filenames indicating their type (e.g., / for directories, * for executables).
+* -X Sorts files alphabetically by their extension.
+
+### cat
+
+You can also join multiple files into a new file:
+
+```bash
+cat file1.txt file2.txt > merged.txt
+```
+
+### grep
+
 * 
 
-### cd: 
-* 
+### cp:
 
-### ls: 
-* 
-
-### cat: 
-* 
-
-### grep: 
-* 
-
-### cp: 
 * 
 
 ### wc: 
