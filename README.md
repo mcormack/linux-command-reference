@@ -2,19 +2,19 @@
 
 ## Reference for Linux Commands
 
-    * uname: print basic info about system OS and hardware. [**Common Options**](#uname-options)
-    * pwd: 
-    * cd: 
-    * ls: 
-    * cat: 
-    * grep: 
-    * cp: 
-    * wc: 
-    * find: 
-    * diff: 
-    * curl: 
-    * vim: 
-    * chmod: 
+* uname: print basic info about system OS and hardware. [**Common Options**](#uname-options)
+* pwd: 
+* cd: 
+* ls: 
+* cat: 
+* grep: 
+* cp: 
+* wc: 
+* find: 
+* diff: 
+* curl: 
+* vim: 
+* chmod: 
 
 ## 🎥 Good References / Sources
 
