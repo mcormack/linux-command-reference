@@ -1,11 +1,13 @@
 # linux-command-reference
 
+<img src="https://www.linuxfoundation.org/hubfs/Tux-flat-version.svg" alt="Linx Mascot - Tux" width="100"/>
+
 ## Reference for Linux Commands
 
-* uname: print basic info about system OS and hardware. [**Common Options**](#uname-options)
+* uname: print basic info about system OS and hardware. [**Options**](#uname)
 * pwd: 
 * cd: 
-* ls: 
+* ls:
 * cat: 
 * grep: 
 * cp: 
@@ -22,9 +24,9 @@
    * uname, pwd, cd, ls, cat, grep, cp, wc, find, diff, curl, vim, chmod
 2. 📋 [Linux Commands Cheat Sheet](https://linux-commands.labex.io/)
 
-## 📋 Extended Reference
+## 📋 Extended Reference - Commands' Options
 
-### uname options
+### uname
 
 * -a All System Information
 * -s Kernel name (default)
