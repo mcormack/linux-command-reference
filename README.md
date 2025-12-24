@@ -24,18 +24,49 @@
 
 ## 📋 Extended Reference
 
-### uname options:
+### uname options
 
+* -a All System Information
+* -s Kernel name (default)
+* -r Kernel release
+* -v Kernel version
+* -m Machine hardware architecture / name (ex., x86_64)
+* -n Network hostname
+* -o Operating system
+* -p Processor type
 
-* pwd: 
-* cd: 
-* ls: 
-* cat: 
-* grep: 
-* cp: 
-* wc: 
-* find: 
-* diff: 
-* curl: 
-* vim: 
-* chmod: 
+### pwd:
+* 
+
+### cd: 
+* 
+
+### ls: 
+* 
+
+### cat: 
+* 
+
+### grep: 
+* 
+
+### cp: 
+* 
+
+### wc: 
+* 
+
+### find: 
+* 
+
+### diff: 
+* 
+
+### curl: 
+* 
+
+### vim: 
+* 
+
+### chmod: 
+* 
