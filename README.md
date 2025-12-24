@@ -9,7 +9,7 @@
 * `cd`: Change working directory.
 * `ls`: Lists / displays contents of a directory. Shows files and directories within the current directory. [**Options**](#ls)
 * `cat`: Concatenate: Read the contents of any file. [**Options**](#cat)
-* `grep`: 
+* `grep`: General Regular Expression Print: Search for text patterns in files or output. Filters and displays lines that match a specific string or patttern.
 * `cp`: 
 * `wc`: 
 * `find`: 
@@ -57,7 +57,11 @@
 
 ### cat
 
-You can also join multiple files into a new file:
+* -n: Displays the output with line numbers.
+* -E: Displays a $ character at the end of each line.
+* -s: Squeezes multiple adjacent empty lines into one.
+
+You can join multiple files into a new file:
 
 ```bash
 cat file1.txt file2.txt > merged.txt
@@ -65,7 +69,21 @@ cat file1.txt file2.txt > merged.txt
 
 ### grep
 
-* 
+* Searching within a specific file:
+
+```bash
+grep "dog" sample.txt
+```
+
+* -i makes the search case-insensitive.
+* Use regex for more advanced seach patterns. Lines that start with Hello for example:
+
+```bash
+grep "^Hello" -i sample.txt
+```
+
+* More complex search examples 🗒️ [Search Patterns Examples](https://labex.io/tutorials/linux-linux-grep-command-with-practical-examples-422703#use-grep-to-search-for-patterns-in-text-files)
+
 
 ### cp:
 
@@ -88,3 +106,27 @@ cat file1.txt file2.txt > merged.txt
 
 ### chmod: 
 * 
+
+### Other:
+
+Chain multiple commands using the `|` (pipe) operator. Whatever the first command outputs it will be the input of the following command.
+
+```bash
+## Chain Commands
+cat file1.txt | grep Database
+```
+
+Output functions result into a textfile using `>`:
+
+```bash
+## Output result to a file
+cat file1.txt | grep Database > filtered.txt
+```
+
+Append lines to .txt using `>`.
+
+```bash
+## Create sample text files
+echo "First line of file_1.txt." > file_1.txt
+echo "Second line of file_1.txt." >> file_1.txt
+```
