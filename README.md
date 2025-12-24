@@ -9,14 +9,15 @@
 * `cd`: Change working directory.
 * `ls`: Lists / displays contents of a directory. Shows files and directories within the current directory. [**Options**](#ls)
 * `cat`: Concatenate: Read the contents of any file. [**Options**](#cat)
-* `grep`: General Regular Expression Print: Search for text patterns in files or output. Filters and displays lines that match a specific string or patttern.
-* `cp`: 
-* `wc`: 
+* `grep`: General Regular Expression Print: Search for text patterns in files or output. Filters and displays lines that match a specific string or patttern. [**Options**](#grep)
+* `cp`: Copy files from one directory to another `cp [SOURCE] [DESTINATION]` [**Options**](#cp)
+* `wc`: Word Count: Count number of lines, words, characters in a file or some input. [**Options**](#wc)
 * `find`: 
 * `diff`: 
-* `curl`: 
+* `curl`: Call URL
 * `vim`: 
 * `chmod`: 
+* `touch`: Create files
 
 ## 🎥 Good References / Sources
 
@@ -37,6 +38,8 @@
 * -o Operating system
 * -p Processor type
 
+⬆ [**GO UP**](#reference-for-linux-commands)
+
 ### ls
 
 #### Most Used
@@ -55,6 +58,8 @@
 * -F Appends a character to filenames indicating their type (e.g., / for directories, * for executables).
 * -X Sorts files alphabetically by their extension.
 
+⬆ [**GO UP**](#reference-for-linux-commands)
+
 ### cat
 
 * -n: Displays the output with line numbers.
@@ -67,12 +72,20 @@ You can join multiple files into a new file:
 cat file1.txt file2.txt > merged.txt
 ```
 
+⬆ [**GO UP**](#reference-for-linux-commands)
+
 ### grep
 
 * Searching within a specific file:
 
 ```bash
-grep "dog" sample.txt
+grep dog sample.txt
+```
+
+* When searching for phrases use "":
+
+```bash
+grep "connection refused" sample.txt
 ```
 
 * -i makes the search case-insensitive.
@@ -84,13 +97,44 @@ grep "^Hello" -i sample.txt
 
 * More complex search examples 🗒️ [Search Patterns Examples](https://labex.io/tutorials/linux-linux-grep-command-with-practical-examples-422703#use-grep-to-search-for-patterns-in-text-files)
 
+⬆ [**GO UP**](#reference-for-linux-commands)
 
-### cp:
+### cp
 
-* 
+#### Examples
 
-### wc: 
-* 
+Simple Copy
+
+```bash
+cp file1.txt file1_copy.txt
+```
+
+Copy to another Directory, passing the direct path:
+
+```bash
+cp file1.txt /root/file1_copy.txt
+```
+
+Also used to copy directories:
+
+```bash
+cp -r dir1 dir2
+```
+
+* -r used to copy directories recursively, including internal files.
+* -p preserve the original file attributes and timestamps
+
+⬆ [**GO UP**](#reference-for-linux-commands)
+
+### wc
+
+* -l Count Lines
+* -w Count Words
+* -c Bytes
+* -m Characters
+* -L find longest Line Length
+
+⬆ [**GO UP**](#reference-for-linux-commands)
 
 ### find: 
 * 
@@ -130,3 +174,5 @@ Append lines to .txt using `>`.
 echo "First line of file_1.txt." > file_1.txt
 echo "Second line of file_1.txt." >> file_1.txt
 ```
+
+⬆ [**GO UP**](#reference-for-linux-commands)
