@@ -27,7 +27,7 @@
 
 ## 📋 Extended Reference - Commands' Options
 
-### uname
+### 🖋️ uname
 
 * -a All System Information
 * -s Kernel name (default)
