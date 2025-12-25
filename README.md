@@ -4,20 +4,20 @@
 
 ## Reference for Linux Commands
 
-* `uname`: Print basic info about system OS and hardware. [**Options**](#uname)
-* `pwd`: Print working directory, where are we located.
-* `cd`: Change working directory.
-* `ls`: Lists / displays contents of a directory. Shows files and directories within the current directory. [**Options**](#ls)
-* `cat`: Concatenate: Read the contents of any file. [**Options**](#cat)
-* `grep`: General Regular Expression Print: Search for text patterns in files or output. Filters and displays lines that match a specific string or patttern. [**Options**](#grep)
-* `cp`: Copy files from one directory to another `cp [SOURCE] [DESTINATION]` [**Options**](#cp)
-* `wc`: Word Count: Count number of lines, words, characters in a file or some input. [**Options**](#wc)
-* `find`: Search for Files and direcories. `find [starting_path] [option] [expression]`. [**Options**](#find)
-* `diff`: Compare two files and show the difference. `diff file1 file2` [**Options**](#diff)
-* `curl`: Client URL. Used to transfer data from or to a server using HTTP or other protocols. Typically used to interact with APIs. [**Options**](#curl)
-* `vim`: Open VIM Editor to change files. [**Options**](#vim)
-* `chmod`: Change Mode: Modify file permissions. [**Options**](#chmod)
-* `touch`: Create files or update the timestamps. `touch [options] [file_name(s)]` [**Options**](#touch)
+* 🖋️ `uname`: Print basic info about system OS and hardware. [**Options**](#uname)
+* 📍 `pwd`: Print working directory, where are we located.
+* 📂 `cd`: Change working directory.
+* 📋`ls`: Lists / displays contents of a directory. Shows files and directories within the current directory. [**Options**](#ls)
+* 🐈‍⬛ `cat`: Concatenate: Read the contents of any file. [**Options**](#cat)
+* 🔍 `grep`: General Regular Expression Print: Search for text patterns in files or output. Filters and displays lines that match a specific string or patttern. [**Options**](#grep)
+* 📮 `cp`: Copy files from one directory to another `cp [SOURCE] [DESTINATION]` [**Options**](#cp)
+* 💯 `wc`: Word Count: Count number of lines, words, characters in a file or some input. [**Options**](#wc)
+* 🔍 `find`: Search for Files and direcories. `find [starting_path] [option] [expression]`. [**Options**](#find)
+* 🚦 `diff`: Compare two files and show the difference. `diff file1 file2` [**Options**](#diff)
+* 🕸️ `curl`: Client URL. Used to transfer data from or to a server using HTTP or other protocols. Typically used to interact with APIs. [**Options**](#curl)
+* 📝 `vim`: Open VIM Editor to change files. [**Options**](#vim)
+* ✍️ `chmod`: Change Mode: Modify file permissions. [**Options**](#chmod)
+* ✋ `touch`: Create files or update the timestamps. `touch [options] [file_name(s)]` [**Options**](#touch)
 
 ## 🎥 Good References / Sources
 
@@ -27,7 +27,7 @@
 
 ## 📋 Extended Reference - Commands' Options
 
-### 🖋️ uname
+### uname
 
 * -a All System Information
 * -s Kernel name (default)
