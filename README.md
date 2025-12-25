@@ -89,6 +89,7 @@ grep "connection refused" sample.txt
 ```
 
 * -i makes the search case-insensitive.
+* -c display the count of matches.
 * Use regex for more advanced seach patterns. Lines that start with Hello for example:
 
 ```bash
