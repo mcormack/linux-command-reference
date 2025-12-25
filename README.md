@@ -12,12 +12,12 @@
 * `grep`: General Regular Expression Print: Search for text patterns in files or output. Filters and displays lines that match a specific string or patttern. [**Options**](#grep)
 * `cp`: Copy files from one directory to another `cp [SOURCE] [DESTINATION]` [**Options**](#cp)
 * `wc`: Word Count: Count number of lines, words, characters in a file or some input. [**Options**](#wc)
-* `find`: 
-* `diff`: 
-* `curl`: Call URL
-* `vim`: 
-* `chmod`: 
-* `touch`: Create files
+* `find`: Search for Files and direcories. `find [starting_path] [option] [expression]`. [**Options**](#find)
+* `diff`: Compare two files and show the difference. `diff file1 file2` [**Options**](#diff)
+* `curl`: Client URL. Used to transfer data from or to a server using HTTP or other protocols. Typically used to interact with APIs. [**Options**](#curl)
+* `vim`: Open VIM Editor to change files. [**Options**](#vim)
+* `chmod`: Change Mode: Modify file permissions. [**Options**](#chmod)
+* `touch`: Create files or update the timestamps. `touch [options] [file_name(s)]` [**Options**](#touch)
 
 ## 🎥 Good References / Sources
 
@@ -48,7 +48,7 @@
 * -h Displays file sizes in human-readable formats (e.g., KB, MB) when combined with -l.
 * -t Sorts files by modification time, with the newest first.
 
-#### Other
+#### Others
 
 * -a All files, including hidden ones.
 * -R Lists contents of directories recursively, including subdirectories.
@@ -136,22 +136,112 @@ cp -r dir1 dir2
 
 ⬆ [**GO UP**](#reference-for-linux-commands)
 
-### find: 
-* 
+### find
 
-### diff: 
-* 
+* Options: You can search by name, file type, file size or permission.
+* -type: f file, d directory.
+* -size: Finding by size, using + and - prefixes signifying greater than and less than. 'M' for mebibytes, 'G' for gibibytes, 'k' for kibibytes.
+* Examples:
+"."= Current Directory.
+"/"= Entire File System. Root file system.
 
-### curl: 
-* 
+```bash
+find -name / "*.conf"
+# Combine with grep to filter:
+find -name / "*.conf" | grep db
+find -name / "*.conf*" | grep db
+# Larger files:
+find . -size +1M
+```
 
-### vim: 
-* 
+More info: [Linux Manual on Find](https://man7.org/linux/man-pages/man1/find.1.html)
 
-### chmod: 
-* 
+⬆ [**GO UP**](#reference-for-linux-commands)
 
-### Other:
+### diff
+
+* -c: Display the differences in a more readable format.
+* -w: Ignore white space differences.
+
+⬆ [**GO UP**](#reference-for-linux-commands)
+
+### curl
+
+* -I (or --head): Just return the headers. (Metadata)
+* -O Tells curl to save the file with the same name as the remote file.
+* -o To specify a different file name.
+
+```bash
+curl https://google.com
+curl http://localhost:5432
+
+curl -o curl_homepage.html https://google.com
+```
+
+⬆ [**GO UP**](#reference-for-linux-commands)
+
+### vim
+
+* Commonly used for editing config files in Linux
+* It has 3 modes
+  * Insert Mode: type or edit text.
+  * Normal Mode: Default, for navigation
+  * Command Mode: Execute commands like save, quit, search.
+
+```bash
+vim db.config
+```
+
+Navigation:
+
+* To enter edit mode, press i.
+* To Exit: Press ESC (Back to normal mode) then ":" and:
+  * `:q` Quit only if no changes have been made.
+  * `:q!` Quit without Saving
+  * `:w` Save the file
+  * `:wq` or `ZZ`
+  * `x` Save and quit only if changes were made.
+
+⬆ [**GO UP**](#reference-for-linux-commands)
+
+### chmod
+
+* File Permissions
+
+  * Initial symbol: `-` File, `d` Directory, `l` Sybolic Link
+  * Different types: `-rwxrwxrwx`: Read, Write, Execute, `-` is denied.
+  * Position is in this order: User, Group, Other. so `-rw-rw---` means User and Group can only read and write.
+  * To change permissons each permission has a numeric value: r=4, w=2, x=1
+
+```bash
+## Full Permissions
+chmod 777 db.config
+## No Permissions
+chmod 000 db.config
+## Read Permissions only for all groups
+chmod 444 db.config
+## Owner rwx, Group and Others: rx (Good for Scripts)
+chmod 755 db.config
+## Owner rw, Group and Others: r (Usually Text files)
+chmod 644 db.config
+```
+
+⬆ [**GO UP**](#reference-for-linux-commands)
+
+### touch
+
+* -a: Updates the access time of the file.
+* -m: Updates the modification time of the file.
+* -d or -t: Sets the access and modification times to the specified date and time.
+* -c or -f: Creates the file if it doesn't exist, without issuing an error message.
+
+```bash
+touch new_file.txt
+```
+
+⬆ [**GO UP**](#reference-for-linux-commands)
+
+### Other
 
 Chain multiple commands using the `|` (pipe) operator. Whatever the first command outputs it will be the input of the following command.
 
