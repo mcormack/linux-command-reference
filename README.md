@@ -24,6 +24,7 @@
 1. 📼 [TechWorld with Nana - 13 Linux Commands](https://www.youtube.com/watch?v=CLh2ACdXNbc): Mentioned Commands:
    * uname, pwd, cd, ls, cat, grep, cp, wc, find, diff, curl, vim, chmod
 2. 📋 [Linux Commands Cheat Sheet](https://linux-commands.labex.io/)
+3. ﹥ Other CLI Tools [10 CLI apps Video](https://www.youtube.com/watch?v=EJ6uvqhKR4M)
 
 ## 📋 Extended Reference - Commands' Options
 
@@ -267,3 +268,7 @@ echo "Second line of file_1.txt." >> file_1.txt
 ```
 
 ⬆ [**GO UP**](#reference-for-linux-commands)
+
+# Useful Tools
+
+1. 🛠️ [It Tools](https://it-tools.tech/json-minify) -> [Web Version](https://it-tools.tech/) -> Forked due to non maintenance -> [Next Tools](https://github.com/willjayyyy/next-tools) -> [Web Version](https://www.next-tools.dev/)
