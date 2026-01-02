@@ -269,6 +269,6 @@ echo "Second line of file_1.txt." >> file_1.txt
 
 ⬆ [**GO UP**](#reference-for-linux-commands)
 
-# Useful Tools
+## Useful Tools
 
 1. 🛠️ [It Tools](https://it-tools.tech/json-minify) -> [Web Version](https://it-tools.tech/) -> Forked due to non maintenance -> [Next Tools](https://github.com/willjayyyy/next-tools) -> [Web Version](https://www.next-tools.dev/)
