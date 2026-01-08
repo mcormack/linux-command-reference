@@ -2,7 +2,8 @@
 
 <img src="https://www.linuxfoundation.org/hubfs/Tux-flat-version.svg" alt="Linx Mascot - Tux" width="100"/>
 
-## All Commands and Shortcuts: [IT-Tools Bash Cheatsheet](https://sharevb-it-tools.vercel.app/bash-memo)
+## All Commands and Shortcuts:
+* 📋[IT-Tools Bash Cheatsheet](https://sharevb-it-tools.vercel.app/bash-memo)
 
 ## Reference for Linux Commands
 
