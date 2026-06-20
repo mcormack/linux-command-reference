@@ -30,6 +30,7 @@
    * uname, pwd, cd, ls, cat, grep, cp, wc, find, diff, curl, vim, chmod
 3. 📋 [Linux Commands Cheat Sheet](https://linux-commands.labex.io/)
 4. 📋 Other CLI Tools [10 CLI apps Video](https://www.youtube.com/watch?v=EJ6uvqhKR4M)
+5. [Linux Survival (To Be Checked)](https://linuxsurvival.com/)
 
 ## 📋 Extended Reference - Commands' Options
 
